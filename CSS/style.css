@@ -49,12 +49,12 @@ body {
 .c1 h1 {
     font-size: 7rem;
     text-align: center;
-    width: 30%;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: 
-      typing 1.5s steps(7),
-      cursor 3s;
+      typing 4s steps(7),
+      cursor 4s;
 }
 @keyframes cursor{
   50%{
