@@ -53,7 +53,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     animation: 
-      typing 4s steps(7),
+      typing 4s steps(20),
       cursor 4s;
 }
 @keyframes cursor{
