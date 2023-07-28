@@ -208,7 +208,7 @@ footer{
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .c1 {
-      margin-top: 9.2rem;
+      margin-top: 6rem;
     }
     .c1 h1 {
       font-size: 4rem;
