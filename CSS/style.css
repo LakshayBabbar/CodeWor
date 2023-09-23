@@ -49,6 +49,7 @@ body {
 .title {
     color: aliceblue;
     position: relative; 
+    overflow: hidden;
 }
 .title .title-txt {
     font-size: 7rem;
