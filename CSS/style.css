@@ -44,6 +44,7 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 12rem;
+  overflow: hidden;
 }
 .title {
     color: aliceblue;
