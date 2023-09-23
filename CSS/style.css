@@ -1,17 +1,18 @@
-/* For All Content */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+html{
+  overflow-x: hidden;
+}
 body {
     scroll-behavior: smooth;
-    background: linear-gradient(to bottom, rgba(72, 68, 68, 0.35) 0%, rgba(72, 68, 68, 0.35) 100%), url(../src/p1.jpg);
+    background: url(../src/main-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
     scroll-behavior:smooth;
-  }
-  
-  * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0;
-    margin: 0;
   }
   
   /* NAVBAR */
@@ -38,36 +39,41 @@ body {
     width: 100%;
   }
 /* CONTENT PORTION */
-.c1 {
+.head{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12rem;
+}
+.title {
     color: aliceblue;
-    text-align: center;
-    margin-top: 12rem;
-    display: flex;
-    justify-content: center;
+    position: relative; 
 }
-.c1 h1 {
+.title .title-txt {
     font-size: 7rem;
-    text-align: center;
     width: 100%;
-    white-space: nowrap;
     overflow: hidden;
-    animation: 
-      typing 4s steps(20),
-      cursor 4s;
-}
-@keyframes cursor{
-  50%{
-    border-color: transparent;
   }
+  .title-txt:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-left: 0.5rem solid red;
+    background-color: black;
+    animation: typing 4s steps(20) infinite;
 }
 @keyframes typing{
-    from{
-      width: 0;
-    }
+  40%,60%{
+    left: 100%;
+  }
+  100%{
+    left: 0;
+  }
 }
-.c1 h1 span{
-  color: rgb(252, 51, 51);
-}
+
 hr.divider {
     height: 0.3rem;
     max-width: 6.25rem;
@@ -116,6 +122,7 @@ hr.divider {
 }
 .c4 {
     display: flex;
+
 }
 img {
     width: 33.3%;
@@ -126,7 +133,7 @@ img {
 footer{
     background: rgb(17, 17, 17);
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     padding-top: 15px;
@@ -196,11 +203,11 @@ footer{
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
-    .c1 {
-      margin-top: 9.2rem;
+    .head {
+      margin-top: 6rem;
     }
-    .c1 h1 {
-      font-size: 4rem;
+    .title .title-txt {
+      font-size: 2.5rem;
     }
     .c2 {
       padding-left: 1rem;
