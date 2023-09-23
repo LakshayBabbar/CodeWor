@@ -5,10 +5,10 @@ const effect = () => {
     },0);
     setTimeout(()=>{
         txt.textContent = "Free BCA Notes";
-    },4200);
+    },4000);
     setTimeout(()=>{
         txt.textContent = "By Lakshay Babbar";
-    },8400);
+    },8000);
 }
 effect();
-setInterval(effect,12600);
+setInterval(effect,12000);
