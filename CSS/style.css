@@ -49,11 +49,25 @@ body {
     color: aliceblue;
     position: relative; 
 }
-.title .title-txt {
+.title .title-txt ,.title-ptr{
     font-size: 7rem;
     width: 100%;
     overflow: hidden;
   }
+.title-ptr{
+  color: red;
+  animation: blinking 1s linear infinite;
+  transition: 1s;
+}
+@keyframes blinking {
+  0%,100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
   /* .title-txt:before{
     content: "";
     position: absolute;
@@ -206,7 +220,7 @@ footer{
     .head {
       margin-top: 6rem;
     }
-    .title .title-txt {
+    .title .title-txt,.title-ptr {
       font-size: 2.5rem;
     }
     .c2 {
