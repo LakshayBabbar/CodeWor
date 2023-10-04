@@ -25,4 +25,4 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
     }
 }
-typeWriter();
+setTimeout(typeWriter,250);
