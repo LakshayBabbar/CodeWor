@@ -44,19 +44,17 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 12rem;
-  overflow: hidden;
 }
 .title {
     color: aliceblue;
     position: relative; 
-    overflow: hidden;
 }
 .title .title-txt {
     font-size: 7rem;
     width: 100%;
     overflow: hidden;
   }
-  .title-txt:before{
+  /* .title-txt:before{
     content: "";
     position: absolute;
     height: 100%;
@@ -75,7 +73,7 @@ body {
     left: 0;
   }
 }
-
+ */
 hr.divider {
     height: 0.3rem;
     max-width: 6.25rem;
